@@ -17,8 +17,14 @@ app.get("/", (req, res) => {
 })
 
 app.route("/*").get(function (req, res) {
+    return res.sendFile(path.join(__dirname, "./views/register.html"));
+})
+
+app.route("/*").get(function (req, res) {
     return res.sendFile(path.join(__dirname, "./views/login.html"));
 });
+
+
    
     //let htmlPath = path.resolve(__dirname, "./views/index.html");
     //res.sendFile(htmlPath)
