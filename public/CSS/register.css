@@ -73,6 +73,7 @@
 .botones{
     display: flex;
     justify-content: space-between;
+   
 }
 
 .boton-registrarse, .boton-borrar-todo{
